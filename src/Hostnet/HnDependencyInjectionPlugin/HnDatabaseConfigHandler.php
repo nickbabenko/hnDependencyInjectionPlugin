@@ -57,6 +57,7 @@ class HnDatabaseConfigHandler
         } else {
             if (strpos(SYMFONY_VERSION, '1.3.') === 0
                 || strpos(SYMFONY_VERSION, '1.4.') === 0
+                || strpos(SYMFONY_VERSION, '1.5.') === 0
             ) {
                 $output = $this->createSymfony14Output($debug, $connections);
             } else {
